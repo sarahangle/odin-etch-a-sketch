@@ -1,0 +1,22 @@
+.grid {
+    display: grid;
+    box-sizing: border-box;
+    border: solid 2px;
+    width: 600px;
+    height: 600px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-square {
+    background-color: white;
+    border: solid 1px gray;
+}
+
+.grid-square.hover {
+    background-color: black;
+}
+
+.grid-square.hovered {
+    background-color: black;
+}
