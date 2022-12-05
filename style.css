@@ -10,7 +10,6 @@
 
 .grid-square {
     background-color: white;
-    border: solid 1px gray;
 }
 
 .grid-square.hover {

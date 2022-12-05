@@ -49,4 +49,18 @@ function hoverOff(e) {
     this.addEventListener('mouseleave', hoverOn);
 }
 
+// Create listener for the grid-size button
+function sizeButtonListener() {
+    const sizeButton = document.querySelector('.size-button');
+    sizeButton.addEventListener('click', sizeButtonClick);
+}
+
+function sizeButtonClick(e) {
+    newSize = window.prompt("Enter a grid size!");
+    if (newSize > 100) {newSize = 100;}
+    else if (newSize < 10) {newSize = 10;}
+    createGrid(newSize);
+}
+
 createGrid(16);
+sizeButtonListener();
